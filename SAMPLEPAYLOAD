@@ -1,0 +1,62 @@
+    /*
+   CN_STATEMENT_ACCT_TKN
+   CN_CUSTOMER_LAST_NAME
+   CN_CUSTOMER_FIRST_NAME
+   CN_SERVICE_TYPE
+   NORMALIZED_ADDRESS
+   CN_MAILING_ZIPCODE
+   */
+
+        /*
+        payload
+        {
+           "websiteId" : "PSETECH",
+           "accountNumber" : "200022753350",
+           "firstName":"CHARLES",
+           "lastName":"HIATT",
+           "zipCode": "",
+           "billing1" : "",
+           "billing2" : "",
+           "city" : "",
+           "state" : "",
+           "email" : "",
+           "normalizeAddress" : "8488 Tillicum Rd SW Seattle WA 98136-2461",
+           "heatingType": "",
+           "heatingEquipment" : ""
+        }
+
+        paylod from UI laravel framework
+
+        {
+	"accountNumber": "200022753350",
+	"lastname": "HIATT",
+	"normalizedAddress": "8488 Tillicum Rd SW Seattle WA 98136-2461",
+	"program": "e123",
+	"retailer": "test",
+	"sms": "6172408377",
+	"token": "b2bfa10a-7b5a-4968-94f1-4e36ea5b3a4d",
+	"utility": "test",
+	"zipcode": "98136"
+}
+
+        */
+
+
+
+Ssample sql
+
+//SELECT CN_STATEMENT_ACCT_TKN, CN_SERVICE_TYPE FROM CUSTOMERS WHERE ((NORMALIZED_ADDRESS='9347 Piperhill Dr SE Olympia WA 98513-3426' AND CN_CUSTOMER_LAST_NAME='RICHARDSON') OR (CN_STATEMENT_ACCT_TKN='EFI-test' AND CN_SERVICE_TYPE ='G'));
+
+// SELECT p.CUSTOMER_ID,n.TARGET_URL1,n.TARGET_URL2, n.COUPON_CODE from psen                                                                                                                                                             estrebate.PARTICIPATION p, psenestrebate.NEST_CODES n WHERE p.CUSTOMER_ID='20002                                                                                                                                                             3139914' and p.NEST_CODE=n.COUPON_CODE LIMIT 1;
+
+        //TODO: replacing this code with ALI node js curl POST
+
+
+
+            /*$finalRes = [
+                "status" => "0",
+                "rebateUrl1" => "http://www.efi.org/" . $customer->CN_STATEMENT_ACCT_TKN . "-1",
+                "rebateUrl2" => "http://www.efi.org/" . $customer->CN_STATEMENT_ACCT_TKN . "-2",
+                "couponCode" => ""
+            ];*/
+
